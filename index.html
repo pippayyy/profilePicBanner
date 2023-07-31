@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <title>Profile Picture Overlay</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 	<style>
 		#overlay-img, .overlay-img {
 			width:500px;
@@ -35,7 +37,7 @@
 		    text-transform: uppercase;
 		  	vertical-align: middle;
 		    color: white;
-		    background-color: #e62b1e;
+		    background-color: blue;
 		    -webkit-tap-highlight-color: transparent;
 		}
 
@@ -73,25 +75,36 @@
   <script type="text/javascript" src="caman.full.js"></script>
 
 
-      <div>
-          <h2>Get excited for [insert amazing cause/event here]!</h2>
-          <p>Create a profile overlay with our theme. How better to show your anticipation for [insert amazing cause/event here]? This is how you can create your overlay:</p>
-          <ol>
-          	<li><b>Locate</b> your profile picture on your computer, <b>or download</b> your profile picture from e.g. Facebook (right-click and choose "Save As...").</li>
-          	<li><b>Select</b> your picture below, and check the overlay. <b>Square pictures</b> work best, as the picture will automatically be cropped to be square.</li>
-          	<li><b>Download</b> your brand new picture (right-click and choose "Save As...") and set it on the social networks of your choice.</li>
-          </ol>
-          <p>Learn more about [insert amazing cause/event here] <a href="#">on this page</a>.</p>
-      </div>
+  <div class="container">
+	<div class="row mt-5">
+	  <div class="col-6">
+
+			<h2>VBTS profile picture banner tool</h2>
+			<p>Overlay the brand new VBTS banner on your profile picture in just a few easy steps!</p>
+			<ol>
+				<li><b>Upload</b> your profile picture</li>
+				<li><b>Save </b> your new picture by right-clicking and selecting 'save as'</li>
+				<li><b>Replace</b> your profile picture on all your work channels e.g Teams</li>
+			</ol>
+			<p><em>Note: square images work best!</em></p>
+
+			<div>
+				<input type="file" accept="image/*" onchange="loadFile(event)" id="file" class="inputfile" />
+			  <label for="file">Select Profile Picture</label>
+			</div>
+			
+		</div>
+		<div class="col-6">
+		
+			<div class="overlay-div">
+				<img id="overlay-img" src="plain.jpeg"/>
+			</div>
+
+	  </div>
+	</div>
+  </div>
 
 
-
-<div class="overlay-div">
-  	<input type="file" accept="image/*" onchange="loadFile(event)" id="file" class="inputfile" />
-	<label for="file">Choose Profile Image</label>
-
-	<img id="overlay-img" src="plain.jpeg"/>
-</div>
 	<script>
 	  var loadFile = function(event) {
 	    var reader = new FileReader();
@@ -123,10 +136,7 @@
 		$('#overlay-img').removeAttr('style');
 	};
 	</script>
-
-<div class="madeBy">Made by <a href="http://dora.rocks/" target="_blank">Dora Dzvonyar</a> using <a href="http://camanjs.com/" target="_blank">CamanJS</a></div>
-
-        
+       
         
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
