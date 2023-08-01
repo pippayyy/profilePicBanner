@@ -82,7 +82,7 @@
 			<h2>VBTS profile picture banner tool</h2>
 			<p>Overlay the brand new VBTS banner on your profile picture in just a few easy steps!</p>
 			<ol>
-				<li><b>Upload</b> your profile picture</li>
+				<li><b>Select</b> your profile picture</li>
 				<li><b>Save </b> your new picture by right-clicking and selecting 'save as'</li>
 				<li><b>Replace</b> your profile picture on all your work channels e.g Teams</li>
 			</ol>
@@ -97,7 +97,7 @@
 		<div class="col-6">
 		
 			<div class="overlay-div">
-				<img id="overlay-img" src="plain.jpeg"/>
+				<img id="overlay-img" src="plain.png"/>
 			</div>
 
 	  </div>
@@ -122,11 +122,12 @@
 			    this.setBlendingMode("normal");
 			    this.opacity(100);
 			    this.overlayImage(baseImg);
+				// this.crop(500, 500);
 		  	});
 
 		  	this.newLayer(function() {
 			    this.setBlendingMode("normal");
-			    this.opacity(90);
+			    this.opacity(100);
 			    this.overlayImage('overlay.png');
 		  	});
 
