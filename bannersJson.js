@@ -1,3 +1,3 @@
 const bannersJson = [
-    {name: "VBTS Red", imgPlain: "overlayNew.png", imgOverlay: "overlayNew.png"},
-    {name: "VBTS Grey", imgPlain: "overlayGrey.png", imgOverlay: "overlayGrey.png"}];
+    {name: "VBTS Red", imgPlain: "redVBTSBanner.png", imgOverlay: "redVBTSBanner.png"},
+    {name: "VBTS Grey", imgPlain: "blackVBTSBanner.png", imgOverlay: "blackVBTSBanner.png"}];
