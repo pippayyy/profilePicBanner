@@ -107,30 +107,30 @@
 
 		</div>
 
-		<div class="col-2 text-center px-4">
+		<!-- <div class="col-2 text-center px-4">
 			<h6 >Select banner:</h6>
 			<div id="bannerSpace">
-				<!-- Javascript inserts banners here -->
+				Javascript inserts banners here
 			</div>
-		</div>
+		</div> -->
 
 	</div>
 </div>
 
 
 	<script>
-		var bannerDiv = document.getElementById("bannerSpace");
-		var bannerHtml = "";
+		// var bannerDiv = document.getElementById("bannerSpace");
+		// var bannerHtml = "";
 
-		bannersJson.forEach(function (bannerItem) {
-			bannerHtml += `<button class="p-0">
-								<div class="card">
-									<img src="${bannerItem.imgPlain}" data-overlay="${bannerItem.imgOverlay}" class="card-img-top px-2 bannerPic" alt="...">
-								</div>
-							</button>`;
-		});
+		// bannersJson.forEach(function (bannerItem) {
+		// 	bannerHtml += `<button class="p-0">
+		// 						<div class="card">
+		// 							<img src="${bannerItem.imgPlain}" data-overlay="${bannerItem.imgOverlay}" class="card-img-top px-2 bannerPic" alt="...">
+		// 						</div>
+		// 					</button>`;
+		// });
 
-		bannerDiv.innerHTML = bannerHtml;
+		// bannerDiv.innerHTML = bannerHtml;
 
   	</script>
 
